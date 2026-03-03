@@ -1,7 +1,3 @@
-# View Project
-
-https://books4u-frontend.netlify.app/
-
 # Books4u
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
