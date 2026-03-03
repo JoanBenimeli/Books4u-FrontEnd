@@ -1,1 +1,7 @@
-/* /index.html 200
+/ /es 302 Language=es
+/ /en 302 Language=en
+
+/ /es 301
+
+/es/* /es/index.html 200
+/en/* /en/index.html 200
