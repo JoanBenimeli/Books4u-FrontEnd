@@ -1,0 +1,66 @@
+#body {
+    background-color: #eeeeee;
+    height: 100vh;
+}
+
+#cont {
+    height: 70%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#back {
+    background-image: url("/assets/img/register.jpg");
+    background-size: cover;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.mat-mdc-form-field {
+    margin-top: 16px;
+}
+
+form{
+    height: 350px;
+    width: 70%;
+}
+
+img{
+    width: 75px !important;
+    height: 75px !important;
+    object-fit: cover;
+}
+
+.h-10{
+    height: 30%;
+}
+
+textarea{
+    resize: none;
+}
+
+.btns{
+    bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+
+    #imgRegister{
+        width: 60% !important;
+        height: auto !important;
+    }
+
+    .w-75{
+        width: 100% !important;
+    } 
+
+    #cont {
+        height: 100%;
+        border-radius: 0;
+    }
+
+   
+}
+

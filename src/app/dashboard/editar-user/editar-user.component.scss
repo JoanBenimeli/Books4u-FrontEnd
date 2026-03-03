@@ -1,0 +1,18 @@
+#imgPreview{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+section{
+    min-height: 100%;
+}
+
+@media (max-width: 768px) {
+
+    #imgPreview {
+        height: 150px;
+        width: 150px;
+    }
+
+}

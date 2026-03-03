@@ -1,0 +1,31 @@
+p, h5, h3{
+    color: black !important;
+} 
+
+.ttl{
+    background-color: #eeeeee;
+}
+
+
+.local-info {
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.local-info:hover{
+    cursor: pointer;
+}
+
+.local-nombre {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.local-direccion,
+.local-descripcion {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+

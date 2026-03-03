@@ -1,0 +1,39 @@
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+<section class="container admin-section">
+    <div class="row mt-5 mt-md-0">
+        <div class="col-6 col-md-3">
+            <input type="text" class="form-control input-lg" placeholder="Buscar" i18n-placeholder="buscarUser" (input)="filtrar($event)"/>
+        </div>
+        <div class="col-6 offset-md-3 text-end">
+            <button class="btn btn-primary" (click)="crearUsuario()" i18n="add user"><i class="bi bi-person-plus"></i> Crear Usuario</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col overflow-x-auto">
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col" i18n="table user">Usuario</th>
+                        <th scope="col" i18n="table Nick">Nick</th>
+                        <th scope="col" i18n="table Email">Email</th>
+                        <th scope="col" i18n="table Acciones">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for(usuario of usuariosFiltrados;track usuario.id){
+                    <tr>
+                        <td>{{usuario.nombre}}</td>
+                        <td>&#64;{{usuario.nick}}</td>
+                        <td>{{usuario.email}}</td>
+                        <td>
+                            <a class="link-danger p-2" (click)="eliminarUsuario(usuario.id)"><i class="bi bi-trash"></i></a>
+                            <a class="link-primary p-2" data-bs-toggle="modal" (click)="editarUser(usuario.id)"><i
+                                class="bi bi-pen"></i></a>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

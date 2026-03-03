@@ -1,0 +1,128 @@
+<!--<div class="w-100">
+    <button class="btn btn-warning w-100 rounded-0" (click)="shop()">Ir a la tienda -></button>
+</div>-->
+<section class="container-fluid">
+    <div class="row position-relative">
+        <div class="col-12 p-0" id="firstImgBox">
+            <img src="/assets/img/pexels-cottonbro-4778621.jpg" alt="bgImageHome" class="img-fluid">
+        </div>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+                <div class="slide">
+                    <h3 class="">BOOKS 4U</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid mt-6">
+    <div class="row rowAnimation1">
+        <div class="col-12 pb-4 col-md-4 animation1box position-relative">
+            <h5 class="animation1" i18n="fistText">LA TIENDA DE LECTORES PARA LECTORES</h5>
+            <div class="d-none d-md-block animatedImgBox">
+                <img src="/assets/img/imgAnimated.jpg" alt="imgApearEfect" height="100%" width="100%" style="z-index: 1;">
+                <div id="image-cover" class="whiteCover"></div>   
+            </div>
+        </div>
+        <div class="col-12 col-md-6 offset-md-2 text-md-end animation1box">
+            <!--<h4 class="animation1">WE BELIVE THAT GREAT BRANDING IS MADE WE BELIVE THAT GREAT BRANDING IS MADE</h4>-->
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra1">DESCUBRE</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra2">LA</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra3">MAGIA</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra4">DE</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block diferens" i18n="palabra5">LEER</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra6">A</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra7">LOS</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra8">MEJORES</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra9">PRECIOS</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra10">Y</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block diferens" i18n="palabra11">SUMÉRGETE</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra12">EN</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block" i18n="palabra13">NUEVOS</h4>
+            <h4 class="palabra pe-md-4 pe-2 display-block diferens" i18n="palabra14">MUNDOS</h4>
+        </div>
+    </div>
+</section>
+<section class="container-fluid mt-6 pb-5">
+    <div class="row">
+        <div class="col-12 col-md-6 pb-3 pb-md-0">
+            <div class="overflow-hidden h-100 w-100 position-relative pointer" (click)="store()">
+                <a routerLink="/lista" class="enlaceHover">
+                    <img src="/assets/img/pexels-cottonbro-4778412.jpg" alt="option1" class="imgOption">
+                    <div class="imgOverlay"></div>
+                </a>
+                <h3 class="position-absolute p-3 textImgHover col-9" i18n="opcion home comprar">COMPRA TUS LIBROS AL MEJOR PRECIO</h3>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="overflow-hidden h-100 w-100 position-relative pointer" (click)="subir()">
+                <a routerLink="/subir" class="enlaceHover">
+                    <img src="/assets/img/pexels-alexdzot-3664343.jpg" alt="option2" class="imgOption">
+                    <div class="imgOverlay" id="imgOver"></div>
+                </a>
+                <h3 class="position-absolute p-3 textImgHover col-9" i18n="opcion home vender">VENDE TUS LIBROS DE FORMA SENCILLA</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid pt-5">
+    <div class="row overflow-hidden">
+        <div class="col-12 col-md-4 text-dawn">
+            <h4 class="text-h">BOOKS4U</h4>
+        </div>
+        <div class="col-12 col-md-4 offset-md-4 pb-4 text-dawn">
+            <p i18n="texto efecto dawn">Bienvenidos a Books4U, tu destino en línea para explorar y adquirir una amplia variedad de libros. Nos esforzamos por ofrecer una experiencia de compra fluida y segura, brindándote acceso a miles de títulos de diversos géneros y autores.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div id="photo"></div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid mt-6">
+    <div class="row">
+        <!--NUMEROS CON EFECTO COUNTER-->
+    </div>
+</section>

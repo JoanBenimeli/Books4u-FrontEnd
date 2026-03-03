@@ -1,0 +1,86 @@
+img{
+    height: 80%;
+}
+
+.logImg{
+    height: 75px;
+}
+
+header{
+    border-bottom: 1px solid black;
+    height: 13%;
+}
+
+a{
+    font-size: 25pt;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+#shopLink{
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+footer{
+    background-color: rgb(11, 11, 11);
+    color: white;
+    font-family: "magz";
+
+    p{
+        font-size: 20pt;
+        margin: 0;
+    }
+}
+
+#offcanvasButton:focus{
+    box-shadow: none;
+}
+
+main{
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    header{
+        height: auto;
+    } 
+
+    #offcanvasNavbar2{
+        border: 0;
+    }
+
+    .offcanvas-body{
+        //background-color: black;
+        ul{
+            li{
+              font-weight: 600;
+              font-size: 15pt;
+              a{
+                //color: white;
+              }
+            }
+        }
+    }
+
+    .offcanvas-header{
+        //background-color: black;
+        //color: white;
+    }
+
+    .logImg{
+        height: 50px;
+    }
+    
+    #imgProfile{
+        height: 40px;
+        width: 40px;
+    }
+
+    #userLogProfile:hover{
+        cursor: pointer;
+    }
+}

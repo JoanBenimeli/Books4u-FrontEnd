@@ -1,0 +1,45 @@
+<div id="body" data-bs-theme="light">
+    <video muted autoplay loop>
+        <source src="/assets/vid/3009532-hd_1920_1080_24fps.mp4" type="video/mp4">
+    </video>
+
+   <div class="d-flex align-items-center isla h-100">
+        <div id="cont" class="col-10 offset-1 col-md-4 offset-md-4 d-flex flex-column justify-content-center align-items-center">
+            <img src="/assets/img/generalLogo.png" alt="logoLogin" class="mb-5">
+            @if(invalid){
+                <span style="color: red;" i18n="credenciales invalidas">Credenciales no validas</span>
+            }
+            <form [formGroup]="userLogin">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                        formControlName="email"
+                        [ngClass]="{ 'is-valid': email?.valid, 'is-invalid': email?.invalid && (email?.touched || email?.dirty)}">
+                    <label for="floatingInput">Email</label>
+                    <div *ngIf="email?.invalid && (email?.touched || email?.dirty)" class="invalid-feedback col-12">
+                        @if (email?.hasError('required')) {
+                        <span i18n="login email required">Campo obligatorio</span>
+                        }@else if(email?.hasError('pattern')){
+                        <span i18n="login email format">El formato no es valido</span>
+                        }
+                    </div>
+                </div>
+                <div class="form-floating mb-5">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                        formControlName="password"
+                        [ngClass]="{ 'is-valid': password?.valid, 'is-invalid': password?.invalid && (password?.touched || password?.dirty)}">
+                    <label for="floatingPassword" i18n="login pass">Contraseña</label>
+                    <div *ngIf="password?.invalid && (password?.touched || password?.dirty)"
+                        class="invalid-feedback col-12">
+                        @if (password?.hasError('required')) {
+                        <span i18n="login pass required">Campo obligatorio</span>
+                        }@else if(password?.hasError('pattern')){
+                        <span i18n="login pass invalid">La contraseña debe contener mínimo 8 dígitos</span>
+                        }
+                    </div>
+                </div>
+                <button class="btn btn-warning w-100 mb-2" [disabled]="!userLogin.valid" (click)="login()">Login</button>
+                <a routerLink="/register" i18n="no cuenta register">No tengo cuenta, Registrarme</a>
+            </form>
+        </div>
+    </div>
+</div>

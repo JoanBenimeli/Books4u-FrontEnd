@@ -1,0 +1,58 @@
+#flair {
+    width: 150px;
+    height: 200px;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.container {
+    height: 100vh;
+}
+
+h1{
+    font-size: 60pt;
+    font-weight: 600;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider .slide-track1 {
+    display: flex;
+    animation: scroll 100s linear infinite;
+    -webkit-animation: scroll 100s linear infinite;
+}
+
+.slider .slide-track2 {
+    display: flex;
+    animation: scroll 60s linear infinite;
+    -webkit-animation: scroll 60s linear infinite;
+}
+
+.slider .slide-track3 {
+    display: flex;
+    animation: scroll 120s linear infinite;
+    -webkit-animation: scroll 120s linear infinite;
+}
+
+.slider .slide h3 {
+    font-family: "Migra";
+    font-size: 50pt;
+    margin: 0 20px ;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 25pt;
+        text-align: center;
+    }
+}

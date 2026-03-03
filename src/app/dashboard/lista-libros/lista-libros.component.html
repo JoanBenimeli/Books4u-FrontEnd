@@ -1,0 +1,32 @@
+<section class="container mt-5">
+        <div class="row d-flex justify-content-between align-items-center pb-2">
+                <div class="col-6">
+                        <p class="d-inline-flex gap-1 darkChanger m-0">
+                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample" i18n="lista filtro">
+                                        Filtros <i class="bi bi-funnel"></i>
+                                </a>
+                        </p>
+                </div>
+                <div class="col-6 col-md-3">
+                        <select class="form-select" aria-label="Default select example" (change)="setOrden($event)">
+                                <option selected i18n="lista orden ttl">Ordenar</option>
+                                <option value="alfAsc">A > Z</option>
+                                <option value="alfDec">Z > A</option>
+                                <option value="preAsc" i18n="lista orden price asc">Precio ASC</option>
+                                <option value="preDesc" i18n="lista orden price desc">Precio DESC</option>
+                        </select>
+                </div>
+        </div>
+        <div class="row">
+                <div class="collapse" id="collapseExample">
+                        <app-filtro (eventFiltro)="setFiltro($event)" [autores]="autores" [generos]="generos"
+                                class="card card-body d-md-flex flex-md-row d-md-justify-content-between" />
+                </div>
+        </div>
+        <div class="row row-cols-2 row-cols-md-4 g-4 py-5">
+                @for(libro of librosFiltro; track libro.id){
+                        <app-libro [libro]="libro" [favorito]="comprobarFavorito(libro)" (actLibros)="actualizarLibros()"/>
+                }
+        </div>
+</section>

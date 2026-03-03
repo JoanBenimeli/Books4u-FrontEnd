@@ -1,0 +1,121 @@
+<section class="container">
+    <div class="row">
+        <div class="col-12 mt-4 mt-md-0">
+            <form [formGroup]="localNew" class="h-100 d-flex align-items-center">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="nombreLocal" class="form-label" i18n="local forma name">Nombre</label>
+                        <input type="text" class="form-control" id="nombreLocal" placeholder="Nombre"
+                            name="nombreLocal" formControlName="nombre"
+                            [ngClass]="{ 'is-valid': nombre?.valid, 'is-invalid': nombre?.invalid && (nombre?.touched || nombre?.dirty)}">
+                        <div *ngIf="nombre?.invalid && (nombre?.touched || nombre?.dirty)"
+                            class="invalid-feedback col-12">
+                            @if (nombre?.hasError('required')) {
+                            <span i18n="local forma name required">Campo obligatorio</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="comunidades" class="form-label" i18n="local forma comunida">Comunidades autónomas</label>
+                        <select class="form-select" aria-label="comunidades" formControlName="comunidad" (change)="changeComunidad($event)" [ngClass]="{ 'is-valid': comunidad?.valid, 'is-invalid': comunidad?.invalid && (comunidad?.touched || comunidad?.dirty)}">
+                            @for(comunidad of comunidades;track comunidad.code){
+                                @if(!statusNew && localNew.value.comunidad == comunidad.label){
+                                    <option value="{{comunidad.label}}" selected>{{comunidad.label}}</option>
+                                }@else{
+                                    <option value="{{comunidad.label}}">{{comunidad.label}}</option>
+                                }
+                            }
+                        </select>
+                        <div *ngIf="comunidad?.invalid && (comunidad?.touched || comunidad?.dirty)"
+                            class="invalid-feedback col-12">
+                            @if (comunidad?.hasError('required')) {
+                                <span i18n="local forma comunida required">Campo obligatorio</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="provincias" class="form-label" i18n="local forma provincia">Provincias</label>
+                        <select class="form-select" aria-label="provincias" id="provincias" formControlName="provincia" (change)="changeProvincia($event)" [ngClass]="{ 'is-valid': provincia?.valid, 'is-invalid': provincia?.invalid && (provincia?.touched || provincia?.dirty)}">
+                            @for(provincia of provincias;track provincia.code){
+                                @if(!statusNew && localNew.value.provincia == provincia.label){
+                                    <option value="{{provincia.label}}" selected>{{provincia.label}}</option>
+                                }@else{
+                                    <option value="{{provincia.label}}">{{provincia.label}}</option>
+                                }
+                            }
+                        </select>
+                        <div *ngIf="provincia?.invalid && (provincia?.touched || provincia?.dirty)"
+                            class="invalid-feedback col-12">
+                            @if (provincia?.hasError('required')) {
+                                <span i18n="local forma provincia required">Campo obligatorio</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="provincias" class="form-label" i18n="local forma pobl">Población</label>
+                        <select class="form-select" aria-label="poblaciones" id="poblaciones" formControlName="poblacion" [ngClass]="{ 'is-valid': poblacion?.valid, 'is-invalid': poblacion?.invalid && (poblacion?.touched || poblacion?.dirty)}">
+                            @for(poblacion of poblacionesT; track poblacion.label){
+                                @if(!statusNew && localNew.value.poblacion == poblacion.label){
+                                    <option value="{{poblacion.label}}" selected>{{poblacion.label}}</option>
+                                }@else{
+                                    <option value="{{poblacion.label}}">{{poblacion.label}}</option>
+                                }
+                            }
+                        </select>
+                        <div *ngIf="poblacion?.invalid && (poblacion?.touched || poblacion?.dirty)"
+                            class="invalid-feedback col-12">
+                            @if (poblacion?.hasError('required')) {
+                                <span i18n="local forma pobl required">Campo obligatorio</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="direccionLocal" class="form-label" i18n="local forma direccion">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" placeholder="Direccion" i18n-placeholder="placeholder direction"
+                            name="direccionLocal" formControlName="direccion"
+                            [ngClass]="{ 'is-valid': direccion?.valid, 'is-invalid': direccion?.invalid && (direccion?.touched || direccion?.dirty)}">
+                        <div *ngIf="direccion?.invalid && (direccion?.touched || direccion?.dirty)"
+                            class="invalid-feedback col-12">
+                            @if (direccion?.hasError('required')) {
+                                <span i18n="local forma direccion required">Campo obligatorio</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="emailUsuario" class="form-label" i18n="local forma email">Email del usuario dueño del local</label>
+                        <input type="text" class="form-control" id="email" placeholder="Email"
+                            name="emailUsuario" formControlName="email_usuario"
+                            [ngClass]="{ 'is-valid': email_usuario?.valid, 'is-invalid': email_usuario?.invalid && (email_usuario?.touched || email_usuario?.dirty)}">
+                        <div *ngIf="email_usuario?.invalid && (email_usuario?.touched || email_usuario?.dirty)"
+                            class="invalid-feedback col-12">
+                            @if (email_usuario?.hasError('required')) {
+                                <span i18n="local forma email required">Campo obligatorio</span>
+                            }@else if(email_usuario?.hasError('pattern')){
+                                <span i18n="local forma email invalid"> El formato no es valido</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3 text-end">
+                        <div class="form-group mb-4">
+                            <label i18n="local forma verif">Local verificado? &nbsp;</label>
+                            <mat-slide-toggle formControlName="verificado"></mat-slide-toggle>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="form-floating">
+                            <textarea class="form-control" id="floatingTextarea2" style="height: 100px" formControlName="descripcion"></textarea>
+                            <label for="floatingTextarea2" i18n="form local descrip">Descripción del local</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 text-end mb-4 mb-md-0">
+            @if(statusNew){
+                <button class="btn btn-outline-secondary" (click)="addLocal()" [disabled]="!localNew.valid" i18n="form local add btn">Crear local</button>
+            }@else{
+                <button class="btn btn-outline-primary" (click)="updateUsuario()" [disabled]="!localNew.valid" i18n="form local edit btn">Editar local</button>
+            }
+        </div>
+    </div>
+</section>

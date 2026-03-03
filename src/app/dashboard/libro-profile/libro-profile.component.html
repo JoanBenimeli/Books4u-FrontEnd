@@ -1,0 +1,75 @@
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+<section class="container mt-4 mt-md-5 mb-5">
+  <div class="row">
+    <div class="d-none d-md-block col-3 offset-1 h-50 br-black align-self-end">
+      <p class="mt-5" i18n="libro profile descripcion"><strong>Descripción</strong></p>
+      <p>{{libro.descripcion}}</p>
+    </div>
+    <div class="col-12 col-md-4 d-flex flex-column">
+      <img src="https://www.books4u.es/api/backProyectoFinal/public/{{libro.imagen}}" class="w-100 imgLibro">
+    </div>
+    <div class="col-12 col-md-3 mt-2 mt-md-0 d-flex flex-column justify-content-between h-25 br-black" id="infoBokk">
+      <div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="p-2 d-flex align-items-center">
+            <div class="">
+              <img src="https://www.books4u.es/api/backProyectoFinal/public/{{usuario.imagen}}" class="rounded-circle"
+                height="42px" width="42px">
+            </div>
+            <div class="ms-2">
+              <a routerLink="/profile/{{usuario.id}}" class="darkChanger">
+                <h5 class="card-text">&#64;{{usuario.nick}}</h5>
+              </a>
+            </div>
+          </div>
+          <div>
+            @if(userLog){
+            @if(userLog.rol === 2 || userLog.id == libro.id_usuario){
+            <div class="dropdown">
+              <a role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-three-dots"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" (click)="editarLibro(libro.id)" i18n="opcion editar libro">Editar</a></li>
+                <li><a class="dropdown-item" (click)="eliminarLibro()" i18n="opcion eliminar libro">Eliminar</a></li>
+              </ul>
+            </div>
+            }
+            }
+          </div>
+        </div>
+        <div class="py-2">
+          <div class="d-flex flex-wrap">
+            @for(genero of generos;track genero.id){
+            <div class="rounded-pill border p-1 tags m-1">{{genero.nombre}}</div>
+            }
+          </div>
+        </div>
+        <div class=" p-2">
+          <div class="mb-4">
+            <p class="m-0 fw-bolder" i18n="product">Producto:</p>
+            <h2>{{libro.nombre}}</h2>
+            <h3>{{libro.autor.nombre}}</h3>
+          </div>
+
+          <div class="text-end">
+            <h4>{{libro.precio}}€</h4>
+          </div>
+        </div>
+        <hr>
+        @if(userLog){
+          <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+        }@else{
+          <button id="btnRegister" class="btn btn-warning p-2" (click)="login()"><i class="bi bi-person" i18n="registrarse para comprar"></i> Regístrate para comprar</button>
+        }
+        <p class="advertiment" i18n="pagos seguros">Realiza pagos 100% seguro con PayPal y asegúrate de revisar los detalles del libro antes
+          de proceder con el pago.</p>
+      </div>
+    </div>
+    <div class="d-md-none col-12 h-50 align-self-end">
+      <hr>
+      <p class="mt-5" i18n="libro profile descripcion"><strong>Descripción:</strong></p>
+      <p>{{libro.descripcion}}</p>
+    </div>
+  </div>
+</section>

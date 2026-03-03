@@ -1,0 +1,22 @@
+#body {
+  background-color: rgb(204, 205, 187);
+  height: 100vh;
+}
+
+#cont {
+  height: 80%;
+  border-radius: 20px;
+  background-color: white;
+}
+
+#back {
+  background-image: url("/assets/img/pexels-ron-lach-9641809.jpg");
+  background-size: cover;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+form {
+  width: 70%;
+}/*# sourceMappingURL=login.component.css.map */

@@ -1,0 +1,49 @@
+<div class="card text-left">
+    <div class="card-body">
+        <div class="d-flex">
+            <div class="mr-3">
+                @if(comentario.usuario_emisor.imagen == null){
+                <img src="/assets/img/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                    class="rounded-circle">
+                }@else{
+                <img src="https://www.books4u.es/api/backProyectoFinal/public/{{comentario.usuario_emisor.imagen}}"
+                    class="rounded-circle">
+                }
+            </div>
+            <div id="nombres" class="d-flex w-100 justify-content-between">
+                <div>
+                    <a routerLink="/profile/{{comentario.usuario_emisor.id}}">
+                        <h5 class="card-title">{{comentario.usuario_emisor.nombre}}</h5>
+                    </a>
+                    <p class="card-text">&#64;{{comentario.usuario_emisor.nick}}</p>
+                </div>
+                @if(userLog){
+                    @if(userLog.rol === 2 || userLog.id == comentario.id_usuario_emisor){
+                        <div class="dropdown">
+                            <a role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-three-dots"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" (click)="modTrjeta(comentario.id)" i18n="comentario edit">Editar</a></li>
+                                <li><a class="dropdown-item" (click)="eliminarCom(comentario.id)" i18n="comentario delete">Eliminar</a></li>
+                            </ul>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+        <div class="card-body mt-3" id="padre-{{comentario.id}}">
+            <p class="card-text" id="hijo-{{comentario.id}}">{{comentario.contenido}}</p>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>
+                @if(comentario.valoracion != null){
+                    @for(e of [].constructor(comentario.valoracion);track $index){
+                        <i class="bi bi-star-fill text-warning"></i>
+                    }
+                }
+            </div>
+            <div style="opacity: 0.7;">{{comentario.created_at | date:'d/M/yy'}}</div>
+        </div>
+    </div>
+</div>

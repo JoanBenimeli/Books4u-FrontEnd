@@ -1,0 +1,129 @@
+<div class="w-100 h-100 backColor" data-bs-theme="light">
+    <section class="container pt-5">
+        <h1 i18n="edit book ttl">Editar Libro</h1>
+        <form [formGroup]="libro">
+            <div class="p-3 mb-3 cajasBox">
+                <div class="mb-3">
+                    <label for="nombreLibro" class="form-label" i18n="edit book name">Nombre producto</label>
+                    <input type="text" class="form-control" id="nombreLibro" placeholder="El señor de los anillos"
+                        name="nombreLibro" formControlName="nombre"
+                        [ngClass]="{ 'is-valid': nombre?.valid, 'is-invalid': nombre?.invalid && (nombre?.touched || nombre?.dirty)}">
+                    <div *ngIf="nombre?.invalid && (nombre?.touched || nombre?.dirty)" class="invalid-feedback col-12">
+                        @if (nombre?.hasError('required')) {
+                        <span i18n="edit book name required">Campo obligatorio</span>
+                        }
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label" i18n="edit book descripcion">Descripción</label>
+                    <textarea class="form-control" id="descripcion" rows="6" formControlName="descripcion"></textarea>
+                </div>
+            </div>
+            <div class="p-3 mb-3 cajasBox">
+                <div class="mb-3">
+                    <label for="imgLibro" class="form-label" i18n="edit book imagen">Imagenes del producto</label>
+                    <input class="form-control" type="file" id="imgLibro" (change)="onFileChange($event)"
+                        accept="image/png,image/jpeg" max-size="2000"
+                        [ngClass]="{ 'is-valid': imagen?.valid, 'is-invalid': imagen?.invalid && (imagen?.touched || imagen?.dirty)}">
+                    <div *ngIf="imagen?.invalid && (imagen?.touched || imagen?.dirty)" class="invalid-feedback col-12">
+                        @if (imagen?.hasError('required')) {
+                        <span i18n="edit book imagen required">Campo obligatorio</span>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mb-3 cajasBox">
+                <div class="row d-flex">
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="numero" i18n="edit book paginas">Inserta el número de paginas:</label>
+                        <input type="number" class="form-control" id="numero" placeholder="Nº de paginas" min="0"
+                            formControlName="paginas"
+                            [ngClass]="{ 'is-valid': paginas?.valid, 'is-invalid': paginas?.invalid && (paginas?.touched || paginas?.dirty)}">
+                        <div *ngIf="paginas?.invalid && (paginas?.touched || paginas?.dirty)"
+                            class="invalid-feedback col-12">
+                            @if (paginas?.hasError('required')) {
+                            <span i18n="edit book paginas required">Campo obligatorio</span> 
+                            }@else if (paginas?.hasError('pattern')) {
+                            <span i18n="edit book paginas format">El número de páginas no puede ser negtivo</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="selectGenero" i18n="edit book autor">Seleccione el autor</label>
+                        <select class="form-select form-select" aria-label="Small select example" id="selectAutor"
+                            formControlName="id_autor" (change)="checkAutor($event)"
+                            [ngClass]="{ 'is-valid': id_autor?.valid, 'is-invalid': id_autor?.invalid && (id_autor?.touched || id_autor?.dirty)}">
+                            @for(autor of autores; track autor.id){
+                            <option value="{{autor.id}}">{{autor.nombre}}</option>
+                            }
+                            <option value="otros">Otros...</option>
+                        </select>
+                        @if(id_autor?.value == 'otros'){
+                        <div class="mt-3">
+                            <label for="newAutor" class="form-label" i18n="edit book autorNew">Añadir Autor</label>
+                            <input type="text" class="form-control" id="newAutor" name="newAutor"
+                                formControlName="newAutor">
+                        </div>
+                        }
+                        <div *ngIf="id_autor?.invalid && (id_autor?.touched || id_autor?.dirty)"
+                            class="invalid-feedback col-12">
+                            @if (id_autor?.hasError('required')) {
+                            <span i18n="edit book autor required">Campo obligatorio</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 row d-flex justify-content-between">
+                    <label for="selectGenero" class="form-label" i18n="edit book genero">Seleccione el género</label>
+                    <div class="col-12 col-md-6" formArrayName="generosLibro">
+                        @for(generoLib of getGeneros().controls;track $index){
+                        <div [formGroupName]="$index" class="mb-2 d-flex">
+                            <select class="form-select form-select-sm" aria-label="Small select example"
+                                id="selectGenero" formControlName="id" (change)="checkGenero($event,$index)"
+                                [ngClass]="{ 'is-valid': getGenero($index).valid, 'is-invalid': getGenero($index).invalid && (getGenero($index).touched || getGenero($index).dirty)}">
+                                @for(genero of generos; track genero.id){
+                                <option value="{{genero.id}}">{{genero.nombre}}</option>
+                                }
+                                <option value="otros">Otros...</option>
+                            </select>
+                            <button class="btn btn-outline-danger" (click)="removeGenero($index)"
+                                [disabled]="getGeneros().length == 1" i18n="edit book genero eliminar">Eliminar</button>
+                        </div>
+                        }
+                    </div>
+                    <div class="col-12 col-md-2 offset-md-4 text-end">
+                        <button class="btn btn-warning w-100" id="addGen" (click)="addGenero()" i18n="edit book genero add">Añadir genero</button>
+                    </div>
+                    @for(generoLib of getGeneros().controls;track $index){
+                        @if(generoLib.value.id == 'otros'){
+                            <div class="mt-3 col-12 col-md-6">
+                                <label for="newGenero" class="form-label" i18n="edit book generonew">Nuevo Género</label>
+                                <input type="text" class="form-control" id="newGenero" name="newGenero"
+                                    formControlName="newGenero">
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="mb-3">
+                    <label for="precio" class="form-label" i18n="edit book precio">Precio producto</label>
+                    <input type="number" class="form-control" id="precio" placeholder="15€" min="0"
+                        formControlName="precio"
+                        [ngClass]="{ 'is-valid': precio?.valid, 'is-invalid': precio?.invalid && (precio?.touched || precio?.dirty)}">
+                    <div *ngIf="precio?.invalid && (precio?.touched || precio?.dirty)" class="invalid-feedback col-12">
+                        @if (precio?.hasError('required')) {
+                        <span i18n="edit book precio required">Campo obligatorio</span>
+                        }@else if (precio?.hasError('pattern')) {
+                        <span i18n="edit book precio format">El precio no puede ser negtivo</span>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="row text-end pb-5">
+                <div class="col-6 offset-6 col-md-2 offset-md-10">
+                    <input type="submit" class="btn btn-outline-secondary w-100" value="Editar" (click)="editarLibro()"
+                        [disabled]="!libro.valid" i18n-value="@@editButtonLabel" >
+                </div>
+            </div>
+        </form>
+    </section>
+</div>

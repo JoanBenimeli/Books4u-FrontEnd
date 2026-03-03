@@ -1,0 +1,86 @@
+img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+p{
+    margin-bottom: 0.5px;
+    font-size: 13pt;
+}
+
+#contenedorComentarios{
+    columns: 4 350px;
+    column-gap: 15px;
+    padding: .5rem;
+}
+
+#item{
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+textarea {
+    //width: 80%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: hidden;
+    align-content: center;
+}
+
+#valoracion{
+    font-size: 50pt;
+    padding-left: 2%;
+}
+
+.noBooks{
+    height: 50vh; 
+    background-color: #eeeeee; 
+    color: black;
+}
+
+#optionsUser:visited {
+    color: black;
+}
+
+.mat-mdc-tab-label-container{
+    background-color: #eeeeee;
+}
+
+.gray{
+    //background-color: #eeeeee;
+    //color: black;
+}
+
+.absConf{
+    top: 5px;
+    right: 10px;
+}
+
+.mat-mdc-tab-labels{
+    background-color: #eeeeee;
+}
+
+#upComentario{
+    width: 80%;
+}
+  
+@media (max-width: 768px) {
+    img{
+        width: 80px;
+        height: 80px;
+    }
+
+    h1,h5{
+        margin: 0;
+    }
+
+    #upComentario{
+        width: 100%;
+    }
+}

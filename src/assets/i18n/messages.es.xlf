@@ -1,0 +1,1677 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="filtrar-placeholder" datatype="html">
+        <source>Filtrar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5102041847876891222" datatype="html">
+        <source>Autor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <note priority="1" from="description">autores autor</note>
+      </trans-unit>
+      <trans-unit id="3213108403013945148" datatype="html">
+        <source>Verificado</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <note priority="1" from="description">autores Verificado</note>
+      </trans-unit>
+      <trans-unit id="2656760189624669010" datatype="html">
+        <source>Acciones</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/users-table/users-table.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <note priority="1" from="description">autores Acciones</note>
+      </trans-unit>
+      <trans-unit id="5185211799869484703" datatype="html">
+        <source>Crear nuevo autor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+        <note priority="1" from="description">ttl new autor</note>
+      </trans-unit>
+      <trans-unit id="5707220165619013776" datatype="html">
+        <source>Nombre autor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+        <note priority="1" from="description">new autor name</note>
+      </trans-unit>
+      <trans-unit id="8711589252205332341" datatype="html">
+        <source>Autor verificado?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+        <note priority="1" from="description">new autor verif</note>
+      </trans-unit>
+      <trans-unit id="2907376327223392039" datatype="html">
+        <source>Añadir Autor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+        <note priority="1" from="description">ttl add autor btn</note>
+      </trans-unit>
+      <trans-unit id="4488526208850194361" datatype="html">
+        <source>Editar autor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+        <note priority="1" from="description">ttl edit autor ttl</note>
+      </trans-unit>
+      <trans-unit id="6402951927316857780" datatype="html">
+        <source>Cancelar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+        <note priority="1" from="description">ttl edit autor cancel</note>
+      </trans-unit>
+      <trans-unit id="2153980152639237955" datatype="html">
+        <source>Editar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/autores-table/autores-table.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/comentario/comentario.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/libro-profile/libro-profile.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/libro/libro.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <note priority="1" from="description">ttl edit autor edit</note>
+      </trans-unit>
+      <trans-unit id="5357661269973482487" datatype="html">
+        <source>Nombre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">215,216</context>
+        </context-group>
+        <note priority="1" from="description">new user name</note>
+      </trans-unit>
+      <trans-unit id="414577922443925124" datatype="html">
+        <source>Campo obligatorio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">104,106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">122,123</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">137,138</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">68,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">80,82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">79,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">82,84</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">106,108</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">133,134</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">165,167</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">181,183</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">197,199</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">221,223</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">71,73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">79,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">107,109</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">123,125</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">138,140</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">169,170</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">183,184</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">218,219</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">230,232</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">258,260</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">274,276</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">289,291</context>
+        </context-group>
+        <note priority="1" from="description">new user name required</note>
+      </trans-unit>
+      <trans-unit id="8885664837787239234" datatype="html">
+        <source>El nombre solo puede contener letras</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <note priority="1" from="description">new user format</note>
+      </trans-unit>
+      <trans-unit id="2580583891887947958" datatype="html">
+        <source>Nick</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/users-table/users-table.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">227,228</context>
+        </context-group>
+        <note priority="1" from="description">new user nick</note>
+      </trans-unit>
+      <trans-unit id="4768749765465246664" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/users-table/users-table.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+        <note priority="1" from="description">new user email</note>
+      </trans-unit>
+      <trans-unit id="6658061395556578287" datatype="html">
+        <source>Formato no valido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+        <note priority="1" from="description">new user email format</note>
+      </trans-unit>
+      <trans-unit id="7132730488496169673" datatype="html">
+        <source>Contraseña</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">179,180</context>
+        </context-group>
+        <note priority="1" from="description">new user pass</note>
+      </trans-unit>
+      <trans-unit id="8375244175220500411" datatype="html">
+        <source>Nueva contraseña</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <note priority="1" from="description">new user newpass</note>
+      </trans-unit>
+      <trans-unit id="4692881754960731313" datatype="html">
+        <source> Campo obligatorio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+        <note priority="1" from="description">new user newpass required</note>
+      </trans-unit>
+      <trans-unit id="5855658325126831225" datatype="html">
+        <source>La contraseña debe contener mínimo 8 dígitos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">185,187</context>
+        </context-group>
+        <note priority="1" from="description">new user newpass format</note>
+      </trans-unit>
+      <trans-unit id="8867207463543621736" datatype="html">
+        <source>Imagen perfil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+        <note priority="1" from="description">new user img</note>
+      </trans-unit>
+      <trans-unit id="5630709704879004852" datatype="html">
+        <source>Comunidades autónomas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">154,155</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">247,248</context>
+        </context-group>
+        <note priority="1" from="description">new user comunidad</note>
+      </trans-unit>
+      <trans-unit id="7849553920192503105" datatype="html">
+        <source>Provincias</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">91,92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">170,171</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">263,264</context>
+        </context-group>
+        <note priority="1" from="description">new user provincia</note>
+      </trans-unit>
+      <trans-unit id="3943352679098291213" datatype="html">
+        <source>Población</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">109,110</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">186,187</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">128,129</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">279,280</context>
+        </context-group>
+        <note priority="1" from="description">new user pobl</note>
+      </trans-unit>
+      <trans-unit id="795890916060309463" datatype="html">
+        <source>Roles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">127,128</context>
+        </context-group>
+        <note priority="1" from="description">new user rol</note>
+      </trans-unit>
+      <trans-unit id="7951841412707127889" datatype="html">
+        <source>Crear Usuario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">146,147</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">145,147</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">296,298</context>
+        </context-group>
+        <note priority="1" from="description">new user admin btn</note>
+      </trans-unit>
+      <trans-unit id="6632777142199804295" datatype="html">
+        <source>Editar Usuario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/crear-usuario/crear-usuario.component.html</context>
+          <context context-type="linenumber">148,150</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/editar-user/editar-user.component.html</context>
+          <context context-type="linenumber">123,125</context>
+        </context-group>
+        <note priority="1" from="description">edit user admin btn</note>
+      </trans-unit>
+      <trans-unit id="27938269079184046" datatype="html">
+        <source>Dirección</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/mapa/mapa.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/mapa/mapa.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">209,210</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">217,218</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">91,92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">242,243</context>
+        </context-group>
+        <note priority="1" from="description">local forma direccion</note>
+      </trans-unit>
+      <trans-unit id="5118146539980652094" datatype="html">
+        <source>Direccion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <note priority="1" from="description">placeholder direction</note>
+      </trans-unit>
+      <trans-unit id="2269374268099523035" datatype="html">
+        <source>Email del usuario dueño del local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+        <note priority="1" from="description">local forma email</note>
+      </trans-unit>
+      <trans-unit id="5066032605351428131" datatype="html">
+        <source> El formato no es valido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">94,96</context>
+        </context-group>
+        <note priority="1" from="description">local forma email invalid</note>
+      </trans-unit>
+      <trans-unit id="6248672588333737320" datatype="html">
+        <source>Local verificado?  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+        <note priority="1" from="description">local forma verif</note>
+      </trans-unit>
+      <trans-unit id="8890273346548100341" datatype="html">
+        <source>Descripción del local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">107,108</context>
+        </context-group>
+        <note priority="1" from="description">form local descrip</note>
+      </trans-unit>
+      <trans-unit id="2110265210514949822" datatype="html">
+        <source>Crear local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+        <note priority="1" from="description">form local add btn</note>
+      </trans-unit>
+      <trans-unit id="6425140674898601061" datatype="html">
+        <source>Editar local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/form-local/form-local.component.html</context>
+          <context context-type="linenumber">117,119</context>
+        </context-group>
+        <note priority="1" from="description">form local edit btn</note>
+      </trans-unit>
+      <trans-unit id="5656265501179877938" datatype="html">
+        <source>Filtrar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <note priority="1" from="description">filtrarGenero</note>
+      </trans-unit>
+      <trans-unit id="3718302304914654810" datatype="html">
+        <source>Género</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <note priority="1" from="description">genero genero</note>
+      </trans-unit>
+      <trans-unit id="3998175335395289798" datatype="html">
+        <source>Crear nuevo Género</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+        <note priority="1" from="description">genero new ttl</note>
+      </trans-unit>
+      <trans-unit id="6742151067012379328" datatype="html">
+        <source>Nombre género</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <note priority="1" from="description">genero new nombre</note>
+      </trans-unit>
+      <trans-unit id="6126222053552634835" datatype="html">
+        <source>Genero verificado?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <note priority="1" from="description">genero new verif</note>
+      </trans-unit>
+      <trans-unit id="4664437435385188192" datatype="html">
+        <source>Añadir genero</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+        <note priority="1" from="description">genero new add btn</note>
+      </trans-unit>
+      <trans-unit id="2137837341023519400" datatype="html">
+        <source>Editar género</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/generos-table/generos-table.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+        <note priority="1" from="description">genero edit ttl</note>
+      </trans-unit>
+      <trans-unit id="3693874879803855736" datatype="html">
+        <source>Locales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">133,134</context>
+        </context-group>
+        <note priority="1" from="description">local local</note>
+      </trans-unit>
+      <trans-unit id="4788521938392084122" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;bi bi-building-add&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Añadir local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <note priority="1" from="description">addlocal btn</note>
+      </trans-unit>
+      <trans-unit id="2906587845957718064" datatype="html">
+        <source>Local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+        <note priority="1" from="description">tablelocal local</note>
+      </trans-unit>
+      <trans-unit id="6721897967860471426" datatype="html">
+        <source>Provincia</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <note priority="1" from="description">tablelocal Provincia</note>
+      </trans-unit>
+      <trans-unit id="6643791286022699999" datatype="html">
+        <source>No existen locales registrados</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <note priority="1" from="description">no locals</note>
+      </trans-unit>
+      <trans-unit id="5702736817734509649" datatype="html">
+        <source>Solicitudes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <note priority="1" from="description">local solicitud</note>
+      </trans-unit>
+      <trans-unit id="9135547104741917218" datatype="html">
+        <source>No hay solicitudes de locales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/locales-table/locales-table.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+        <note priority="1" from="description">no solicitud</note>
+      </trans-unit>
+      <trans-unit id="8713073708350341933" datatype="html">
+        <source>Buscar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/users-table/users-table.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">buscarUser</note>
+      </trans-unit>
+      <trans-unit id="4198012407811414659" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;bi bi-person-plus&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Crear Usuario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/users-table/users-table.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <note priority="1" from="description">add user</note>
+      </trans-unit>
+      <trans-unit id="9016536884183098576" datatype="html">
+        <source>Usuario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/users-table/users-table.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <note priority="1" from="description">table user</note>
+      </trans-unit>
+      <trans-unit id="6665903341931535342" datatype="html">
+        <source>Eliminar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/comentario/comentario.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/libro-profile/libro-profile.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/libro/libro.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+        <note priority="1" from="description">comentario delete</note>
+      </trans-unit>
+      <trans-unit id="searchPlaceholder" datatype="html">
+        <source>Buscar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8778946494361919519" datatype="html">
+        <source>Ir a la tienda<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i
+                                    class=&quot;bi bi-arrow-down&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">93,95</context>
+        </context-group>
+        <note priority="1" from="description">dash go home</note>
+      </trans-unit>
+      <trans-unit id="2777636748567220235" datatype="html">
+        <source>Recomendaciones<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i
+                                    class=&quot;bi bi-arrow-down&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+        <note priority="1" from="description">dash go home</note>
+      </trans-unit>
+      <trans-unit id="1289971193578769055" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;bi bi-box-seam&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Vender libro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">106,107</context>
+        </context-group>
+        <note priority="1" from="description">dash vender</note>
+      </trans-unit>
+      <trans-unit id="7666923950233572173" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i
+                                    class=&quot;bi bi-building-add&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Solicitar local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+        <note priority="1" from="description">dash solicitar</note>
+      </trans-unit>
+      <trans-unit id="1297273361589721634" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;bi bi-geo-alt&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Mapa Locales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">117,118</context>
+        </context-group>
+        <note priority="1" from="description">dash mapa</note>
+      </trans-unit>
+      <trans-unit id="2772132009776946405" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;bi bi-heart&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Favoritos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+        <note priority="1" from="description">dash fav</note>
+      </trans-unit>
+      <trans-unit id="9140475519295049361" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;bi bi-gear&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Administración </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">128,129</context>
+        </context-group>
+        <note priority="1" from="description">dash admin</note>
+      </trans-unit>
+      <trans-unit id="8347415084320292058" datatype="html">
+        <source>Géneros</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">131,132</context>
+        </context-group>
+        <note priority="1" from="description">dash genero</note>
+      </trans-unit>
+      <trans-unit id="8969262348265823277" datatype="html">
+        <source>Autores</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">135,136</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/filtro/filtro.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <note priority="1" from="description">dash aut</note>
+      </trans-unit>
+      <trans-unit id="5359751386135164450" datatype="html">
+        <source>Usuarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">137,138</context>
+        </context-group>
+        <note priority="1" from="description">dash usr</note>
+      </trans-unit>
+      <trans-unit id="6451484796068221925" datatype="html">
+        <source>Nº paginas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/filtro/filtro.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <note priority="1" from="description">filtro paginas</note>
+      </trans-unit>
+      <trans-unit id="5682250875209635432" datatype="html">
+        <source>Generos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/filtro/filtro.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <note priority="1" from="description">filtro generos</note>
+      </trans-unit>
+      <trans-unit id="7166616065249842013" datatype="html">
+        <source>Borrar Filtros</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/filtro/filtro.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/filtro/filtro.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+        <note priority="1" from="description">filtro borrar tlf</note>
+      </trans-unit>
+      <trans-unit id="3555930912659898914" datatype="html">
+        <source>LA TIENDA DE LECTORES PARA LECTORES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+        <note priority="1" from="description">fistText</note>
+      </trans-unit>
+      <trans-unit id="4491908580235184837" datatype="html">
+        <source>DESCUBRE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <note priority="1" from="description">palabra1</note>
+      </trans-unit>
+      <trans-unit id="5284401534088857347" datatype="html">
+        <source>LA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note priority="1" from="description">palabra2</note>
+      </trans-unit>
+      <trans-unit id="6493426711845135826" datatype="html">
+        <source>MAGIA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+        <note priority="1" from="description">palabra3</note>
+      </trans-unit>
+      <trans-unit id="3072792531627770201" datatype="html">
+        <source>DE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <note priority="1" from="description">palabra4</note>
+      </trans-unit>
+      <trans-unit id="8604896224106937468" datatype="html">
+        <source>LEER</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <note priority="1" from="description">palabra5</note>
+      </trans-unit>
+      <trans-unit id="2405286474181510887" datatype="html">
+        <source>A</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <note priority="1" from="description">palabra6</note>
+      </trans-unit>
+      <trans-unit id="415325810903934770" datatype="html">
+        <source>LOS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+        <note priority="1" from="description">palabra7</note>
+      </trans-unit>
+      <trans-unit id="1774368165254260749" datatype="html">
+        <source>MEJORES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+        <note priority="1" from="description">palabra8</note>
+      </trans-unit>
+      <trans-unit id="5580292628988482326" datatype="html">
+        <source>PRECIOS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+        <note priority="1" from="description">palabra9</note>
+      </trans-unit>
+      <trans-unit id="9076533917901768566" datatype="html">
+        <source>Y</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note priority="1" from="description">palabra10</note>
+      </trans-unit>
+      <trans-unit id="8331448891669284613" datatype="html">
+        <source>SUMÉRGETE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+        <note priority="1" from="description">palabra11</note>
+      </trans-unit>
+      <trans-unit id="4677726785527621059" datatype="html">
+        <source>EN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <note priority="1" from="description">palabra12</note>
+      </trans-unit>
+      <trans-unit id="1414826125577878780" datatype="html">
+        <source>NUEVOS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">81,82</context>
+        </context-group>
+        <note priority="1" from="description">palabra13</note>
+      </trans-unit>
+      <trans-unit id="1225458782717334374" datatype="html">
+        <source>MUNDOS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+        <note priority="1" from="description">palabra14</note>
+      </trans-unit>
+      <trans-unit id="2337317510748245377" datatype="html">
+        <source>COMPRA TUS LIBROS AL MEJOR PRECIO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">94,96</context>
+        </context-group>
+        <note priority="1" from="description">opcion home comprar</note>
+      </trans-unit>
+      <trans-unit id="2378341635327742397" datatype="html">
+        <source>VENDE TUS LIBROS DE FORMA SENCILLA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">103,105</context>
+        </context-group>
+        <note priority="1" from="description">opcion home vender</note>
+      </trans-unit>
+      <trans-unit id="2340965850786707102" datatype="html">
+        <source>Bienvenidos a Books4U, tu destino en línea para explorar y adquirir una amplia variedad de libros. Nos esforzamos por ofrecer una experiencia de compra fluida y segura, brindándote acceso a miles de títulos de diversos géneros y autores.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/home/home.component.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+        <note priority="1" from="description">texto efecto dawn</note>
+      </trans-unit>
+      <trans-unit id="8108374351451149536" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Descripción<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/libro-profile/libro-profile.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <note priority="1" from="description">libro profile descripcion</note>
+      </trans-unit>
+      <trans-unit id="3868971702315992900" datatype="html">
+        <source>Producto:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/libro-profile/libro-profile.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <note priority="1" from="description">product</note>
+      </trans-unit>
+      <trans-unit id="2106758820365621080" datatype="html">
+        <source>Realiza pagos 100% seguro con PayPal y asegúrate de revisar los detalles del libro antes de proceder con el pago.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/libro-profile/libro-profile.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+        <note priority="1" from="description">pagos seguros</note>
+      </trans-unit>
+      <trans-unit id="3881574015455106343" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Descripción:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/libro-profile/libro-profile.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+        <note priority="1" from="description">libro profile descripcion</note>
+      </trans-unit>
+      <trans-unit id="2944913758001781614" datatype="html">
+        <source> Filtros <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;bi bi-funnel&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/lista-libros/lista-libros.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <note priority="1" from="description">lista filtro</note>
+      </trans-unit>
+      <trans-unit id="5368042189439962963" datatype="html">
+        <source>Ordenar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/lista-libros/lista-libros.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <note priority="1" from="description">lista orden ttl</note>
+      </trans-unit>
+      <trans-unit id="9077738015702639570" datatype="html">
+        <source>Precio ASC</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/lista-libros/lista-libros.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <note priority="1" from="description">lista orden price asc</note>
+      </trans-unit>
+      <trans-unit id="5065529736358679329" datatype="html">
+        <source>Precio DESC</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/lista-libros/lista-libros.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <note priority="1" from="description">lista orden price desc</note>
+      </trans-unit>
+      <trans-unit id="2022559438598976226" datatype="html">
+        <source>Encuentra tu punto de recogida</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/mapa/mapa.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <note priority="1" from="description">titulo mapa</note>
+      </trans-unit>
+      <trans-unit id="8559448036035333252" datatype="html">
+        <source>NUESTRAS RECOMENDACIONES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/news/news.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <note priority="1" from="description">recomendaciones</note>
+      </trans-unit>
+      <trans-unit id="308228709587190785" datatype="html">
+        <source>Datos local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+        <note priority="1" from="description">solicitar local datos</note>
+      </trans-unit>
+      <trans-unit id="4762454286801086678" datatype="html">
+        <source>Nombre del local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">129,130</context>
+        </context-group>
+        <note priority="1" from="description">solicitar local nombre</note>
+      </trans-unit>
+      <trans-unit id="2702769239797460498" datatype="html">
+        <source>Descripción</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">140,141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <note priority="1" from="description">solicitar local descripcion</note>
+      </trans-unit>
+      <trans-unit id="7723363407369833320" datatype="html">
+        <source>Localización</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">149,150</context>
+        </context-group>
+        <note priority="1" from="description">solicitar local localizacion</note>
+      </trans-unit>
+      <trans-unit id="8188909092187999587" datatype="html">
+        <source>Solicitar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">113,115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/solicitar-local/solicitar-local.component.html</context>
+          <context context-type="linenumber">228,230</context>
+        </context-group>
+        <note priority="1" from="description">solicitar local solicitar btn</note>
+      </trans-unit>
+      <trans-unit id="6305242344273003003" datatype="html">
+        <source>Editar Libro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <note priority="1" from="description">edit book ttl</note>
+      </trans-unit>
+      <trans-unit id="7049365580219340823" datatype="html">
+        <source>Nombre producto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <note priority="1" from="description">edit book name</note>
+      </trans-unit>
+      <trans-unit id="242773980641766098" datatype="html">
+        <source>Imagenes del producto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+        <note priority="1" from="description">edit book imagen</note>
+      </trans-unit>
+      <trans-unit id="4182141267653596135" datatype="html">
+        <source>Inserta el número de paginas:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+        <note priority="1" from="description">edit book paginas</note>
+      </trans-unit>
+      <trans-unit id="495014059322725773" datatype="html">
+        <source>El número de páginas no puede ser negtivo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <note priority="1" from="description">edit book paginas format</note>
+      </trans-unit>
+      <trans-unit id="9220353594547685499" datatype="html">
+        <source>Seleccione el autor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <note priority="1" from="description">edit book autor</note>
+      </trans-unit>
+      <trans-unit id="3540112155139496933" datatype="html">
+        <source>Seleccione el género</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+        <note priority="1" from="description">edit book genero</note>
+      </trans-unit>
+      <trans-unit id="2872564397725087259" datatype="html">
+        <source>Nuevo Género</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+        <note priority="1" from="description">edit book generonew</note>
+      </trans-unit>
+      <trans-unit id="7054454556060421954" datatype="html">
+        <source>Precio producto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">108,109</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">108,109</context>
+        </context-group>
+        <note priority="1" from="description">edit book precio</note>
+      </trans-unit>
+      <trans-unit id="1802117361967524270" datatype="html">
+        <source>El precio no puede ser negtivo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">116,118</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">116,117</context>
+        </context-group>
+        <note priority="1" from="description">edit book precio format</note>
+      </trans-unit>
+      <trans-unit id="editButtonLabel" datatype="html">
+        <source>Editar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/update-book/update-book.component.html</context>
+          <context context-type="linenumber">123,124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8858943795140762826" datatype="html">
+        <source> (<x id="INTERPOLATION" equiv-text="{{numVal}}"/> valoraciones) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+        <note priority="1" from="description">userProfile valoraciones1</note>
+      </trans-unit>
+      <trans-unit id="784457717490794202" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Sobre mí:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <note priority="1" from="description">userProfile sobremi</note>
+      </trans-unit>
+      <trans-unit id="librosTabLabel" datatype="html">
+        <source>Libros</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4599716855976354711" datatype="html">
+        <source>Este usuario no tiene libros publicados</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <note priority="1" from="description">userProfile noBooks</note>
+      </trans-unit>
+      <trans-unit id="librosComentariosLaber" datatype="html">
+        <source>Comentarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5799967332469617016" datatype="html">
+        <source>Este usuario no tiene ninguna valoración</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">92,94</context>
+        </context-group>
+        <note priority="1" from="description">userProfile no valoraciones</note>
+      </trans-unit>
+      <trans-unit id="1896093879997026163" datatype="html">
+        <source>Enviar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">103,104</context>
+        </context-group>
+        <note priority="1" from="description">userprofile enviar comentario</note>
+      </trans-unit>
+      <trans-unit id="1361266484854145689" datatype="html">
+        <source>Subir Libro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <note priority="1" from="description">vender ttl</note>
+      </trans-unit>
+      <trans-unit id="6486756603268458850" datatype="html">
+        <source>El señor de los anillos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <note priority="1" from="description">Placeholder for the book name</note>
+      </trans-unit>
+      <trans-unit id="7685190501967167758" datatype="html">
+        <source>Otros...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+        <note priority="1" from="description">vender autor otro</note>
+      </trans-unit>
+      <trans-unit id="6260097265061548538" datatype="html">
+        <source>Subir</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/vender-form/vender-form.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <note priority="1" from="description">subirlibro</note>
+      </trans-unit>
+      <trans-unit id="3888953412802213514" datatype="html">
+        <source>Credenciales no validas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+        <note priority="1" from="description">credenciales invalidas</note>
+      </trans-unit>
+      <trans-unit id="5970676726261356327" datatype="html">
+        <source>El formato no es valido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">69,71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">171,173</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">220,222</context>
+        </context-group>
+        <note priority="1" from="description">login email format</note>
+      </trans-unit>
+      <trans-unit id="8190736861613790481" datatype="html">
+        <source>No tengo cuenta, Registrarme</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">41,43</context>
+        </context-group>
+        <note priority="1" from="description">no cuenta register</note>
+      </trans-unit>
+      <trans-unit id="3178538806982774404" datatype="html">
+        <source>Inicio sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">160,161</context>
+        </context-group>
+        <note priority="1" from="description">inicio sesion register</note>
+      </trans-unit>
+      <trans-unit id="7270338395711195014" datatype="html">
+        <source>Datos Usuario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">196,197</context>
+        </context-group>
+        <note priority="1" from="description">datos user register</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

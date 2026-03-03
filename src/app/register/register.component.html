@@ -1,0 +1,303 @@
+<div id="body" class="d-flex align-items-center" data-bs-theme="light">
+  <div id="cont" class="d-none d-md-flex col-8 offset-2">
+    <div id="back" class="col-4"></div>
+    <div id="form" class="col-8 d-flex flex-column justify-content-center align-items-center">
+      <mat-stepper [linear]="true" #stepper class="w-100">
+        <mat-step [stepControl]="primerFormGroup">
+          <form [formGroup]="primerFormGroup"
+            class="p-3 d-flex flex-column align-items-center justify-content-center w-100 position-relative">
+            <ng-template matStepLabel i18n="inicio sesion register">Inicio sesión</ng-template>
+            <div class="w-100 d-flex flex-column align-items-center">
+              <div class="form-floating mb-3 w-75">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                  formControlName="email"
+                  [ngClass]="{ 'is-valid': email?.valid, 'is-invalid': email?.invalid && (email?.touched || email?.dirty)}">
+                <label for="floatingInput">Email</label>
+                <div *ngIf="email?.invalid && (email?.touched || email?.dirty)" class="invalid-feedback col-12">
+                  @if (email?.hasError('required')) {
+                  <span i18n="register email required">Campo obligatorio</span>
+                  }@else if(email?.hasError('pattern')){
+                  <span i18n="register email format">El formato no es valido</span>
+                  }
+                </div>
+              </div>
+              <div class="form-floating mb-5 w-75">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                  formControlName="password"
+                  [ngClass]="{ 'is-valid': password?.valid, 'is-invalid': password?.invalid && (password?.touched || password?.dirty)}">
+                <label for="floatingPassword" i18n="register pass">Contraseña</label>
+                <div *ngIf="password?.invalid && (password?.touched || password?.dirty)"
+                  class="invalid-feedback col-12">
+                  @if (password?.hasError('required')) {
+                    <span i18n="register pass required">Campo obligatorio</span>
+                  }@else if (password?.hasError('pattern')) {
+                    <span i18n="register pass format">La contraseña debe contener mínimo 8 dígitos</span>
+                  }
+                </div>
+              </div>
+            </div>
+            <div class="w-100 text-end position-absolute btns">
+              <button mat-button matStepperNext class="btn-lg">Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="segundoFormGroup">
+          <ng-template matStepLabel i18n="datos user register">Datos Usuario</ng-template>
+          <form [formGroup]="segundoFormGroup"
+            class="p-3 d-flex flex-column align-items-center justify-content-center w-100 position-relative">
+            <div class="w-100 d-flex flex-column align-items-center">
+              <div class="col-12 mb-3 w-75 h-10">
+                <div class="row">
+                  <div class="col-3 h-100">
+                    <img src="/assets/img/userDefault.jpg"
+                      class="rounded-circle h-100" id="imgPreview">
+                  </div>
+                  <div class="col-9 d-flex align-items-center">
+                    <input class="form-control" type="file" id="formFile" accept="image/png,image/jpeg"
+                              (change)="preview($event)">
+                  </div>
+                </div>
+              </div>
+              <div class="form-floating mb-3 w-75">
+                <input type="text" class="form-control" id="floatingName" placeholder="Nombre" formControlName="nombre"
+                  [ngClass]="{ 'is-valid': nombre?.valid, 'is-invalid': nombre?.invalid && (nombre?.touched || nombre?.dirty)}">
+                <label for="floatingName" i18n="nombre register">Nombre</label>
+                <div *ngIf="nombre?.invalid && (nombre?.touched || nombre?.dirty)" class="invalid-feedback col-12">
+                  @if (nombre?.hasError('required')) {
+                  <span i18n="register name required">Campo obligatorio</span>
+                  }@else if(email?.hasError('pattern')){
+                  <span i18n="register name format">El formato no es valido</span>
+                  }
+                </div>
+              </div>
+              <div class="form-floating mb-5 w-75">
+                <input type="text" class="form-control" id="floatingNick" placeholder="Nick" formControlName="nick"
+                  [ngClass]="{ 'is-valid': nick?.valid, 'is-invalid': nick?.invalid && (nick?.touched || nick?.dirty)}">
+                <label for="floatingNick" i18n="register nick">Nick</label>
+                <div *ngIf="nick?.invalid && (nick?.touched || nick?.dirty)" class="invalid-feedback col-12">
+                  @if (nick?.hasError('required')) {
+                  <span i18n="register nick required">Campo obligatorio</span>
+                  }
+                </div>
+              </div>
+            </div>
+            <div class="w-100 text-end position-absolute btns">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="terceroFormGroup">
+          <ng-template matStepLabel i18n="direccion register">Dirección</ng-template>
+          <form [formGroup]="terceroFormGroup"
+            class="p-3 d-flex flex-column align-items-center justify-content-between w-100 position-relative">
+            <div class="w-100 d-flex flex-column align-items-center">
+              <div class="mb-3 w-75">
+                <label for="comunidades" class="form-label" i18n="comunidades register">Comunidades autónomas</label>
+                <select class="form-select" aria-label="comunidades" formControlName="comunidad"
+                  (change)="changeComunidad($event)"
+                  [ngClass]="{ 'is-valid': comunidad?.valid, 'is-invalid': comunidad?.invalid && (comunidad?.touched || comunidad?.dirty)}">
+                  @for(comunidad of comunidades;track comunidad.code){
+                  <option value="{{comunidad.label}}">{{comunidad.label}}</option>
+                  }
+                </select>
+                <div *ngIf="comunidad?.invalid && (comunidad?.touched || comunidad?.dirty)"
+                  class="invalid-feedback col-12">
+                  @if (comunidad?.hasError('required')) {
+                  <span i18n="register comunidad required">Campo obligatorio</span>
+                  }
+                </div>
+              </div>
+              <div class="mb-3 w-75">
+                <label for="provincias" class="form-label" i18n="provincias register">Provincias</label>
+                <select class="form-select" aria-label="provincias" id="provincias" formControlName="provincia"
+                  (change)="changeProvincia($event)"
+                  [ngClass]="{ 'is-valid': provincia?.valid, 'is-invalid': provincia?.invalid && (provincia?.touched || provincia?.dirty)}">
+                  @for(provincia of provincias;track provincia.code){
+                  <option value="{{provincia.label}}">{{provincia.label}}</option>
+                  }
+                </select>
+                <div *ngIf="provincia?.invalid && (provincia?.touched || provincia?.dirty)"
+                  class="invalid-feedback col-12">
+                  @if (provincia?.hasError('required')) {
+                    <span i18n="register provincia required">Campo obligatorio</span>
+                  }
+                </div>
+              </div>
+              <div class="mb-3 w-75">
+                <label for="provincias" class="form-label" i18n="población register">Población</label>
+                <select class="form-select" aria-label="poblaciones" id="poblaciones" formControlName="poblacion"
+                  [ngClass]="{ 'is-valid': poblacion?.valid, 'is-invalid': poblacion?.invalid && (poblacion?.touched || poblacion?.dirty)}">
+                  @for(poblacion of poblacionesT; track poblacion.label){
+                  <option value="{{poblacion.label}}">{{poblacion.label}}</option>
+                  }
+                </select>
+                <div *ngIf="poblacion?.invalid && (poblacion?.touched || poblacion?.dirty)"
+                  class="invalid-feedback col-12">
+                  @if (poblacion?.hasError('required')) {
+                  <span i18n="register poblacion required">Campo obligatorio</span>
+                  }
+                </div>
+              </div>
+            </div>
+            <div class="w-100 text-end position-absolute btns">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button (click)="addUsuario()" i18n="crear usuario register">Crear Usuario</button>
+            </div>
+          </form>
+        </mat-step>
+      </mat-stepper>
+    </div>
+  </div>
+
+  <div id="cont" class="d-md-none col-12 col-md-8 offset-md-2 d-flex">
+    <div id="form" class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center">
+      <img src="/assets/img/generalLogo.png" alt="logoRegister" id="imgRegister" class="pt-5">
+      <mat-stepper orientation="vertical" [linear]="true" #stepper class="w-100">
+        <mat-step [stepControl]="primerFormGroup">
+          <form [formGroup]="primerFormGroup"
+            class="p-3 d-flex flex-column align-items-center justify-content-center w-100 position-relative">
+            <ng-template matStepLabel i18n="inicio sesion register">Inicio sesión</ng-template>
+            <div class="w-100 d-flex flex-column align-items-center">
+              <div class="form-floating mb-3 w-75">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                  formControlName="email"
+                  [ngClass]="{ 'is-valid': email?.valid, 'is-invalid': email?.invalid && (email?.touched || email?.dirty)}">
+                <label for="floatingInput">Email</label>
+                <div *ngIf="email?.invalid && (email?.touched || email?.dirty)" class="invalid-feedback col-12">
+                  @if (email?.hasError('required')) {
+                  <span i18n="register email required">Campo obligatorio</span>
+                  }@else if(email?.hasError('pattern')){
+                  <span i18n="register email format">El formato no es valido</span>
+                  }
+                </div>
+              </div>
+              <div class="form-floating mb-5 w-75">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                  formControlName="password"
+                  [ngClass]="{ 'is-valid': password?.valid, 'is-invalid': password?.invalid && (password?.touched || password?.dirty)}">
+                <label for="floatingPassword" i18n="register pass">Contraseña</label>
+                <div *ngIf="password?.invalid && (password?.touched || password?.dirty)"
+                  class="invalid-feedback col-12">
+                  @if (password?.hasError('required')) {
+                    <span i18n="register pass required">Campo obligatorio</span>
+                  }@else if (password?.hasError('pattern')) {
+                    <span i18n="register pass format">La contraseña debe contener mínimo 8 dígitos</span>
+                  }
+                </div>
+              </div>
+            </div>
+            <div class="w-100 text-end position-absolute btns">
+              <button mat-button matStepperNext class="btn-lg">Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="segundoFormGroup">
+          <ng-template matStepLabel i18n="datos user register">Datos Usuario</ng-template>
+          <form [formGroup]="segundoFormGroup"
+            class="p-3 d-flex flex-column align-items-center justify-content-center w-100 position-relative">
+            <div class="w-100 d-flex flex-column align-items-center">
+              <div class="col-12 mb-3 w-75 h-10">
+                <div class="row justify-content-between">
+                  <div class="col-3 h-100">
+                    <img src="/assets/img/userDefault.jpg"
+                      class="rounded-circle h-100" id="imgPreview">
+                  </div>
+                  <div class="col-8 d-flex align-items-center">
+                    <input class="form-control" type="file" id="formFile" accept="image/png,image/jpeg"
+                              (change)="preview($event)">
+                  </div>
+                </div>
+              </div>
+              <div class="form-floating mb-3 w-75">
+                <input type="text" class="form-control" id="floatingName" placeholder="Nombre" formControlName="nombre"
+                  [ngClass]="{ 'is-valid': nombre?.valid, 'is-invalid': nombre?.invalid && (nombre?.touched || nombre?.dirty)}">
+                <label for="floatingName" i18n="nombre register">Nombre</label>
+                <div *ngIf="nombre?.invalid && (nombre?.touched || nombre?.dirty)" class="invalid-feedback col-12">
+                  @if (nombre?.hasError('required')) {
+                  <span i18n="register name required">Campo obligatorio</span>
+                  }@else if(email?.hasError('pattern')){
+                  <span i18n="register name format">El formato no es valido</span>
+                  }
+                </div>
+              </div>
+              <div class="form-floating mb-5 w-75">
+                <input type="text" class="form-control" id="floatingNick" placeholder="Nick" formControlName="nick"
+                  [ngClass]="{ 'is-valid': nick?.valid, 'is-invalid': nick?.invalid && (nick?.touched || nick?.dirty)}">
+                <label for="floatingNick" i18n="register nick">Nick</label>
+                <div *ngIf="nick?.invalid && (nick?.touched || nick?.dirty)" class="invalid-feedback col-12">
+                  @if (nick?.hasError('required')) {
+                  <span i18n="register nick required">Campo obligatorio</span>
+                  }
+                </div>
+              </div>
+            </div>
+            <div class="w-100 text-end position-absolute btns">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="terceroFormGroup">
+          <ng-template matStepLabel i18n="direccion register">Dirección</ng-template>
+          <form [formGroup]="terceroFormGroup"
+            class="p-3 d-flex flex-column align-items-center justify-content-between w-100 position-relative">
+            <div class="w-100 d-flex flex-column align-items-center">
+              <div class="mb-3 w-75">
+                <label for="comunidades" class="form-label" i18n="comunidades register">Comunidades autónomas</label>
+                <select class="form-select" aria-label="comunidades" formControlName="comunidad"
+                  (change)="changeComunidad($event)"
+                  [ngClass]="{ 'is-valid': comunidad?.valid, 'is-invalid': comunidad?.invalid && (comunidad?.touched || comunidad?.dirty)}">
+                  @for(comunidad of comunidades;track comunidad.code){
+                  <option value="{{comunidad.label}}">{{comunidad.label}}</option>
+                  }
+                </select>
+                <div *ngIf="comunidad?.invalid && (comunidad?.touched || comunidad?.dirty)"
+                  class="invalid-feedback col-12">
+                  @if (comunidad?.hasError('required')) {
+                  <span i18n="register comunidad required">Campo obligatorio</span>
+                  }
+                </div>
+              </div>
+              <div class="mb-3 w-75">
+                <label for="provincias" class="form-label" i18n="provincias register">Provincias</label>
+                <select class="form-select" aria-label="provincias" id="provincias" formControlName="provincia"
+                  (change)="changeProvincia($event)"
+                  [ngClass]="{ 'is-valid': provincia?.valid, 'is-invalid': provincia?.invalid && (provincia?.touched || provincia?.dirty)}">
+                  @for(provincia of provincias;track provincia.code){
+                  <option value="{{provincia.label}}">{{provincia.label}}</option>
+                  }
+                </select>
+                <div *ngIf="provincia?.invalid && (provincia?.touched || provincia?.dirty)"
+                  class="invalid-feedback col-12">
+                  @if (provincia?.hasError('required')) {
+                    <span i18n="register provincia required">Campo obligatorio</span>
+                  }
+                </div>
+              </div>
+              <div class="mb-3 w-75">
+                <label for="provincias" class="form-label" i18n="población register">Población</label>
+                <select class="form-select" aria-label="poblaciones" id="poblaciones" formControlName="poblacion"
+                  [ngClass]="{ 'is-valid': poblacion?.valid, 'is-invalid': poblacion?.invalid && (poblacion?.touched || poblacion?.dirty)}">
+                  @for(poblacion of poblacionesT; track poblacion.label){
+                  <option value="{{poblacion.label}}">{{poblacion.label}}</option>
+                  }
+                </select>
+                <div *ngIf="poblacion?.invalid && (poblacion?.touched || poblacion?.dirty)"
+                  class="invalid-feedback col-12">
+                  @if (poblacion?.hasError('required')) {
+                  <span i18n="register poblacion required">Campo obligatorio</span>
+                  }
+                </div>
+              </div>
+            </div>
+            <div class="w-100 text-end position-absolute btns">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button (click)="addUsuario()" i18n="crear usuario register">Crear Usuario</button>
+            </div>
+          </form>
+        </mat-step>
+      </mat-stepper>
+    </div>
+  </div>
+</div>

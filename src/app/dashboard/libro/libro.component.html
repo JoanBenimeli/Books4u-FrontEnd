@@ -1,0 +1,35 @@
+<div class="card border border-0">
+    <img src="https://www.books4u.es/api/backProyectoFinal/public/{{libro.imagen}}" class="card-img-top" (click)="redirectLibro(libro.id)" alt="imgProduct">
+    <div class="card-body p-0 p-md-3">
+        <div class="d-flex justify-content-between options">
+            @if(userLog){
+                @if(userLog.rol === 2 || userLog.id == libro.id_usuario){
+                    <div class="dropdown">
+                        <a role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" (click)="editarLibro(libro.id)" i18n="opcion editar libro">Editar</a></li>
+                            <li><a class="dropdown-item" (click)="eliminarLibro(libro.id)" i18n="opcion eliminar libro">Eliminar</a></li>
+                        </ul>
+                    </div>
+                }
+            }
+            <div class="ms-auto">
+                @if(userLog){
+                    @if(favorito){
+                        <i class="bi bi-heart-fill text-danger heart" (click)="eliminarFavorito(libro.id)"></i>
+                    }@else{
+                        <i class="bi bi-heart heart" (click)="guardarFavorito(libro.id)"></i>
+                    }
+                }@else{
+                    <a routerLink="/login" class="darkChanger"><i class="bi bi-heart heart"></i></a>
+                }
+            </div>
+        </div>
+        <div (click)="redirectLibro(libro.id)" class="text-md-center">
+            <h5>{{libro.nombre}}</h5>
+            <p>{{libro.precio}}€</p>
+        </div>
+    </div>
+</div>

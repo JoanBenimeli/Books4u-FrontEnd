@@ -1,0 +1,9 @@
+td a:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    table{
+        width: 800px;
+    }
+}

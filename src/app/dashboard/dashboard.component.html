@@ -1,0 +1,165 @@
+<header class="container-fluid">
+    <div class="d-none d-md-flex row h-100 align-items-center">
+        <div class="col-1 h-100 align-content-center">
+            @if(dark){
+            <a routerLink="/"><img src="/assets/img/generalLogoDark.png" alt="Logo" class="logImg my-3"></a>
+            }@else{
+            <a routerLink="/"><img src="/assets/img/generalLogo.png" alt="Logo" class="logImg my-3"></a>
+            }
+        </div>
+        <div class="col-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex ps-5">
+                    <span>LIGHT</span>
+                    <div class="form-check form-switch p-0">
+                        @if(dark){
+                        <input class="form-check-input mx-1" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                            (change)="changeTheme()" checked>
+                        }@else{
+                        <input class="form-check-input mx-1" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                            (change)="changeTheme()">
+                        }
+                    </div>
+                    <span>DARK</span>
+                </div>
+                <div>
+                    <a routerLink="/news" id="shopLink" class="darkChanger"><i class="bi bi-arrow-down"></i>NEWS</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <form (submit)="busqueda($event)" class="input-group">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control" placeholder="Buscar" i18n-placeholder="@@searchPlaceholder"
+                    aria-label="Search" id="buscador" aria-describedby="basic-addon1">
+            </form>
+        </div>
+        <div class="col-4 d-flex justify-content-between align-items-center darkChanger">
+            <div>
+                <a routerLink="/lista" id="shopLink">SHOP<i class="bi bi-arrow-down"></i></a>
+            </div>
+            <div>
+                @if(userLog && userLog.rol == 2){
+                <a (click)="admin()" class="mx-2 darkChanger"><i class="bi bi-gear"></i></a>
+                }
+                @if(userLog){
+                <a (click)="newShop()" class="mx-2"><i class="bi bi-building-add"></i></a>
+                }
+                <a (click)="mapa()" class="mx-2"><i class="bi bi-geo-alt"></i></a>
+                <a (click)="favoritos()" class="mx-2"><i class="bi bi-heart"></i></a>
+                <a (click)="subir()" class="mx-2"><i class="bi bi-box-seam"></i></a>
+
+                @if(userLog){
+                <a (click)="logout()" class="mx-2"><i class="bi bi-box-arrow-left"></i></a>
+                }@else{
+                <a (click)="registrarse()" class="mx-2"><i class="bi bi-person"></i></a>
+                }
+            </div>
+        </div>
+    </div>
+    <nav class="d-block d-md-none navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+        <div class="justify-content-between">
+            <div class="row">
+                <div class="col-6 h-100 align-content-center d-flex align-items-center">
+                    @if(dark){
+                    <a routerLink="/"><img src="/assets/img/generalLogoDark.png" alt="Logo" class="logImg"></a>
+                    }@else{
+                    <a routerLink="/"><img src="/assets/img/generalLogo.png" alt="Logo" class="logImg"></a>
+                    }
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end">
+                    <button class="navbar-toggler border border-0" type="button" id="offcanvasButton"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label" style="width: 100%;">
+                <div class="offcanvas-header ">
+                    @if(userLog){
+                    <div class="d-flex align-items-center" id="userLogProfile" (click)="goProfile()">
+                        <img src="https://www.books4u.es/api/backProyectoFinal/public/{{userLog.imagen}}"
+                            alt="imgUserOfcanvas" height="40px" width="40px" id="imgProfile" class="rounded-circle">
+                        <p class="m-1"> {{userLog.nombre}}</p>
+                    </div>
+                    }
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column darkChanger" data-bs-theme="dark">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/lista" i18n="dash go home">Ir a la tienda<i
+                                    class="bi bi-arrow-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/news" i18n="dash go home">Recomendaciones<i
+                                    class="bi bi-arrow-down"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/"><i class="bi bi-house"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="subir()" i18n="dash vender"><i class="bi bi-box-seam"></i>
+                                Vender libro</a>
+                        </li>
+                        @if(userLog){
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="newShop()" i18n="dash solicitar"><i
+                                    class="bi bi-building-add"></i> Solicitar
+                                local</a>
+                        </li>
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="mapa()" i18n="dash mapa"><i class="bi bi-geo-alt"></i> Mapa
+                                Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="favoritos()" i18n="dash fav"><i class="bi bi-heart"></i>
+                                Favoritos</a>
+                        </li>
+                        @if(userLog && userLog.rol == 2){
+                        <li class="nav-item dropdown" data-bs-theme="light">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="true" i18n="dash admin">
+                                <i class="bi bi-gear"></i> Administración
+                            </a>
+                            <ul class="dropdown-menu" data-bs-popper="static">
+                                <li><a class="dropdown-item" routerLink="/admin/generos" i18n="dash genero">Géneros</a>
+                                </li>
+                                <li><a class="dropdown-item" routerLink="/admin/locales" i18n="dash local">Locales</a>
+                                </li>
+                                <li><a class="dropdown-item" routerLink="/admin/autores" i18n="dash aut">Autores</a>
+                                </li>
+                                <li><a class="dropdown-item" routerLink="/admin/usuarios" i18n="dash usr">Usuarios</a>
+                                </li>
+                            </ul>
+                        </li>
+                        }
+                    </ul>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        @if(userLog){
+                        <li class="nav-item text-end">
+                            <a class="nav-link" (click)="logout()">Logout</a>
+                        </li>
+                        }@else{
+                        <li class="nav-item text-end">
+                            <a class="nav-link" (click)="registrarse()">Login</a>
+                        </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<main>
+    <router-outlet data-bs-theme="dark"></router-outlet>
+</main>
+<footer class="d-flex justify-content-center align-items-center">
+    <p class="py-3">BOOKS4U</p>
+</footer>

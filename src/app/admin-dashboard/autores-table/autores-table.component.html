@@ -1,0 +1,85 @@
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+<section class="container admin-section">
+    <div class="row">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <hr class="d-md-none">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control input" placeholder="Filtrar" i18n-placeholder="@@filtrar-placeholder" (input)="filtrar($event)" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table table-striped mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col" i18n="autores autor">Autor</th>
+                                <th scope="col" i18n="autores Verificado">Verificado</th>
+                                <th scope="col" i18n="autores Acciones">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for(autor of autoresFiltrados;track autor.id){
+                            <tr>
+                                <td>{{autor.nombre}}</td>
+                                @if(autor.isVerificado){
+                                    <td>&#x2714;</td>
+                                }@else{
+                                    <td>&#x268A;</td>  
+                                }
+                                <td>
+                                    <a class="link-danger p-2" (click)="eliminarAutor(autor.id)"><i class="bi bi-trash"></i></a>
+                                    <a class="link-primary p-2" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="mostrarAutorEdit(autor)"><i
+                                        class="bi bi-pen"></i></a>
+                                </td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 offset-md-2 border-md order-1 order-md-2 my-3 my-md-0" id="mesaTrabajo">
+            <h3 i18n="ttl new autor">Crear nuevo autor</h3>
+            <form [formGroup]="autor">
+                <div class="form-group mb-4">
+                    <label for="nameAutor" i18n="new autor name">Nombre autor</label>
+                    <input type="text" class="form-control" id="nameAutor" formControlName="nombre">
+                </div>
+                <div class="form-group mb-4">
+                    <label i18n="new autor verif">Autor verificado?</label><br>
+                    <mat-slide-toggle formControlName="isVerificado"></mat-slide-toggle>
+                </div>
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary" (click)="addAutor()" i18n="ttl add autor btn">Añadir Autor</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel" i18n="ttl edit autor ttl">Editar autor</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form [formGroup]="autorEdit">
+                            <div class="form-group mb-4">
+                                <label for="nameAutor" i18n="ttl edit autor name">Nombre autor</label>
+                                <input type="text" class="form-control" id="nameAutor" formControlName="nombre">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label i18n="ttl edit autor verif">Autor verificado?</label><br>
+                                <mat-slide-toggle formControlName="isVerificado"></mat-slide-toggle>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" i18n="ttl edit autor cancel">Cancelar</button>
+                        <button type="button" class="btn btn-primary" (click)="editarAutor()"  data-bs-dismiss="modal" i18n="ttl edit autor edit">Editar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

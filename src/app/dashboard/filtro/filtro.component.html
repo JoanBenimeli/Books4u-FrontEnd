@@ -1,0 +1,32 @@
+<div class="col-12 col-md-10 d-flex flex-column flex-md-row justify-content-between">
+    <select class="form-select mb-2 mb-md-0 me-md-2" aria-label="Default select example" (change)="filtrarPorAutor($event)" id="autorSelect">
+        <option selected value="0" i18n="filtro autores">Autores</option>
+        @for(autor of autores; track autor.id){
+        <option value="{{autor.id}}">{{autor.nombre}}</option>
+        }
+    </select>
+
+    <select class="form-select mb-2 mb-md-0 me-md-2" aria-label="Default select example" (change)="filtrarPorPag($event)" id="pageNum">
+        <option selected value="0" i18n="filtro paginas">Nº paginas</option>
+        <option value="1">-50</option>
+        <option value="2">50 - 200</option>
+        <option value="3">200 - 400</option>
+        <option value="4">400 - 600</option>
+        <option value="5">600 - 800</option>
+        <option value="6">+800</option>
+    </select>
+
+    <select class="form-select mb-2 mb-md-0 me-md-2" aria-label="Default select example" (change)="filtrarPorGenero($event)"
+        id="generoSelect">
+        <option selected value="0" i18n="filtro generos">Generos</option>
+        @for(genero of generos; track genero.id){
+        <option value="{{genero.id}}">{{genero.nombre}}</option>
+        }
+    </select>
+    <div class="col-md-2 text-end d-md-none">
+        <button class="btn btn-danger" (click)="borrarFiltro()" i18n="filtro borrar tlf">Borrar Filtros</button>
+    </div>
+</div>
+<div class="col-md-2 text-end d-none d-md-block">
+    <button class="btn btn-danger" (click)="borrarFiltro()" i18n="filtro borrar">Borrar Filtros</button>
+</div>

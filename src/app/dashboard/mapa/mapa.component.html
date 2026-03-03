@@ -1,0 +1,72 @@
+<section class="container">
+    <div class="row">
+        <div class="col-12 text-center py-3 my-3 ttl">
+            <h3 i18n="titulo mapa">Encuentra tu punto de recogida</h3>
+        </div>
+    </div>
+    <div class="row d-none d-md-flex">
+        <div class="col-3">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Dirección"
+                    (input)="filtrar($event)">
+                <label for="floatingInput" i18n="label mapa">Dirección</label>
+            </div>
+
+            <div class="w-100 h-75 border overflow-auto">
+                @for(local of localesFiltr;track local.id){
+                <div class="border p-2 mb-2 local-info m-2" (click)="enfocar(local)">
+                    <h5 class="local-nombre">{{local.nombre}}</h5>
+                    <p class="local-direccion">{{local.provincia}}, {{local.poblacion}}</p>
+                    <p class="local-descripcion">{{local.direccion}}</p>
+                </div>
+                }
+            </div>
+        </div>
+        <div class="col-9 p-0 mb-5">
+            <google-map height="90vh" width="100%" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)"
+                (mapMousemove)="move($event)">
+                @for (position of markerPositions; track position) {
+                <map-marker [position]="position" [options]="markerOptions" #marker="mapMarker"
+                    (mapClick)="openInfoWindow(marker)" />
+                }
+                <map-info-window>Info Window content</map-info-window>
+            </google-map>
+
+        </div>
+    </div>
+    <div class="row d-md-none">
+        <mat-tab-group mat-stretch-tabs="true">
+            <mat-tab label="Locales">
+                <div class="mt-4 p-2">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Dirección"
+                            (input)="filtrar($event)">
+                        <label for="floatingInput" i18n="label mapa">Dirección</label>
+                    </div>
+
+                    <div class="w-100 h-75 border overflow-auto">
+                        @for(local of localesFiltr;track local.id){
+                        <div class="border p-2 mb-2 local-info m-2" (click)="enfocar(local)">
+                            <h5 class="local-nombre">{{local.nombre}}</h5>
+                            <p class="local-direccion">{{local.provincia}}, {{local.poblacion}}</p>
+                            <p class="local-descripcion">{{local.direccion}}</p>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="Mapa">
+                <div class="my-4">
+                    <google-map height="90vh" width="100%" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)"
+                        (mapMousemove)="move($event)">
+                        @for (position of markerPositions; track position) {
+                        <map-marker [position]="position" [options]="markerOptions" #marker="mapMarker"
+                            (mapClick)="openInfoWindow(marker)" />
+                        }
+                        <map-info-window>Info Window content</map-info-window>
+                    </google-map>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</section>

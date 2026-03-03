@@ -1,0 +1,50 @@
+#body{
+    //background-color: rgb(204, 205, 187);
+    height: 100vh;
+    position: relative;
+}
+#cont{
+    height: 80%;
+    border-radius: 20px;
+    background-color: white;
+    border: 3px solid black;
+}
+
+.isla{
+    position: relative;
+    z-index: 2;
+}
+
+#back{
+    background-image: url("/assets/img/pexels-ron-lach-9641809.jpg");
+    background-size: cover;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+form{
+    width: 70%;
+}
+
+#logo{
+    width: 20%;
+}
+
+video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img{
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    img{
+        width: 60%;
+    }
+}

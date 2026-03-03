@@ -1,0 +1,18 @@
+td a:hover{
+    cursor: pointer;
+}
+
+#mesaTrabajo{
+    height: 300px;
+}
+
+.border-md{
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .border-md{
+        border: none;
+    } 
+}
