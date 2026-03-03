@@ -52,7 +52,6 @@
               "localize":["es"]
             },
             "production": {
-              "baseHref": "/",
               "budgets": [
                 {
                   "type": "initial",
