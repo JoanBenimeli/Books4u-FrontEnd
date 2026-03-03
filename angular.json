@@ -5,9 +5,15 @@
   "projects": {
     "Books4u": {
       "i18n": {
-        "sourceLocale":"es",
-        "locales": {
-          "en":"src/assets/i18n/messages.en.xlf"
+        "sourceLocale": { 
+          "code": "es", 
+          "baseHref": "/es/" 
+        }, 
+        "locales": { 
+          "en": { 
+            "translation": "src/assets/i18n/messages.en.xlf", 
+            "baseHref": "/en/" 
+          }
         }
       },
       "projectType": "application",
