@@ -1,3 +1,19 @@
+# --- SECCIÓN DE ASSETS (PARA SOLUCIONAR TUS ERRORES 404) ---
+
+# Si el código pide /assets/... intenta servirlo desde la carpeta /es
+[[redirects]]
+  from = "/assets/*"
+  to = "/es/assets/:splat"
+  status = 200
+
+# Como alternativa para el favicon si falla
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/es/favicon.ico"
+  status = 200
+
+# --- SECCIÓN DE IDIOMAS ---
+
 # 1. Si el navegador está en inglés, redirige a /en/
 [[redirects]]
   from = "/"
@@ -11,7 +27,9 @@
   to = "/es/"
   status = 302
 
-# 3. Reglas para que las rutas internas de Angular funcionen (SPA)
+# --- SECCIÓN SPA (PARA QUE FUNCIONE AL REFRESCAR PÁGINA) ---
+
+# 3. Reglas para que las rutas internas de Angular funcionen
 [[redirects]]
   from = "/en/*"
   to = "/en/index.html"
@@ -21,3 +39,4 @@
   from = "/es/*"
   to = "/es/index.html"
   status = 200
+
