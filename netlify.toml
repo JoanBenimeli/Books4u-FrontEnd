@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/api/backProyectoFinal/public/api/*"
-  to = "https://books4u-backend-production.up.railway.app/api/:splat"
+  to = "https://books4u-backend-production.up.railway.app/:splat"
   status = 200
   force = true
 
