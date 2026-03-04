@@ -4,10 +4,6 @@
   status = 200
   force = true
 
-
-
-# --- SECCIÓN DE ASSETS (PARA SOLUCIONAR TUS ERRORES 404) ---
-
 # Si el código pide /assets/... intenta servirlo desde la carpeta /es
 [[redirects]]
   from = "/assets/*"
