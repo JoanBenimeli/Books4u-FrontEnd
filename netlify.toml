@@ -1,3 +1,11 @@
+[[redirects]]
+  from = "/api/backProyectoFinal/public/api/*"
+  to = "https://books4u-backend-production.up.railway.app/api/:splat"
+  status = 200
+  force = true
+
+
+
 # --- SECCIÓN DE ASSETS (PARA SOLUCIONAR TUS ERRORES 404) ---
 
 # Si el código pide /assets/... intenta servirlo desde la carpeta /es
