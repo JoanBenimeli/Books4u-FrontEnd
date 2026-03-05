@@ -45,7 +45,7 @@ export class CrearUsuarioComponent{
         if(usuario.imagen != null){
           console.log(usuario.imagen)
           let img = document.getElementById('imgPreview') as HTMLImageElement
-          img.src = 'https://www.books4u.es/api/backProyectoFinal/public/' + usuario.imagen
+          img.src = '/api/backProyectoFinal/public/' + usuario.imagen
         }
 
         const idComunidad = this.comunidades.find(comunidad => comunidad.label === this.usuario.value.comunidad)?.code;
