@@ -12,32 +12,32 @@ export class LocalesService {
   constructor(private http:HttpClient) { }
 
   getLocales():Observable<Local[]>{
-    return this.http.get<Local[]>('https://www.books4u.es/api/backProyectoFinal/public/api/locales')
+    return this.http.get<Local[]>('/api/backProyectoFinal/public/api/locales')
       .pipe(retry(3),catchError((error: HttpErrorResponse) => errorPeticion<Local[]>(error)));
   }
 
   deleteLocal(id:number):Observable<Local>{
-    return this.http.delete<Local>('https://www.books4u.es/api/backProyectoFinal/public/api/locales/' + id)
+    return this.http.delete<Local>('/api/backProyectoFinal/public/api/locales/' + id)
       .pipe(retry(3),catchError((error: HttpErrorResponse) => errorPeticion<Local>(error)));
   }
 
   showLocal(id:string):Observable<Local>{
-    return this.http.get<Local>('https://www.books4u.es/api/backProyectoFinal/public/api/locales/' + id)
+    return this.http.get<Local>('/api/backProyectoFinal/public/api/locales/' + id)
       .pipe(retry(3),catchError((error: HttpErrorResponse) => errorPeticion<Local>(error)));
   }
 
   postLocal(local:object):Observable<Local>{
-    return this.http.post<Local>('https://www.books4u.es/api/backProyectoFinal/public/api/locales', JSON.stringify(local),{ headers: { 'Content-Type': 'application/json' }})
+    return this.http.post<Local>('/api/backProyectoFinal/public/api/locales', JSON.stringify(local),{ headers: { 'Content-Type': 'application/json' }})
       .pipe(retry(3),catchError((error: HttpErrorResponse) => errorPeticion<Local>(error)));
   }
 
   putLocal(id:number,local:Object):Observable<Local>{
-    return this.http.put<Local>('https://www.books4u.es/api/backProyectoFinal/public/api/locales/' + id,JSON.stringify(local),{ headers: { 'Content-Type': 'application/json' }})
+    return this.http.put<Local>('/api/backProyectoFinal/public/api/locales/' + id,JSON.stringify(local),{ headers: { 'Content-Type': 'application/json' }})
       .pipe(retry(3),catchError((error: HttpErrorResponse) => errorPeticion<Local>(error)));
   }
 
   getLocalVerif():Observable<Local[]>{
-    return this.http.get<Local[]>('https://www.books4u.es/api/backProyectoFinal/public/api/localesVerif')
+    return this.http.get<Local[]>('/api/backProyectoFinal/public/api/localesVerif')
       .pipe(retry(3),catchError((error: HttpErrorResponse) => errorPeticion<Local[]>(error)));
   }
 }

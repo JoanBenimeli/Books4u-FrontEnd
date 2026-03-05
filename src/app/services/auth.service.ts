@@ -14,7 +14,7 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   login(user: object): Observable<Token> {
-    return this.http.post<Token>('https://www.books4u.es/api/backProyectoFinal/public/api/login', JSON.stringify(user), { headers: { 'Content-Type': 'application/json' } })
+    return this.http.post<Token>('/api/backProyectoFinal/public/api/login', JSON.stringify(user), { headers: { 'Content-Type': 'application/json' } })
       .pipe(catchError((error: HttpErrorResponse) => errorPeticion<Token>(error)));
   }
 
@@ -41,12 +41,12 @@ export class AuthService {
   }
 
   logout(user: object): Observable<Token> {
-    return this.http.post<Token>('https://www.books4u.es/api/backProyectoFinal/public/api/logout', JSON.stringify(user), { headers: { 'Content-Type': 'application/json' } })
+    return this.http.post<Token>('/api/backProyectoFinal/public/api/logout', JSON.stringify(user), { headers: { 'Content-Type': 'application/json' } })
       .pipe(retry(3), catchError((error: HttpErrorResponse) => errorPeticion<Token>(error)));
   }
 
   getUserId():Observable<Usuario>{
-    return this.http.get<Usuario>('https://www.books4u.es/api/backProyectoFinal/public/api/userLog')
+    return this.http.get<Usuario>('/api/backProyectoFinal/public/api/userLog')
       .pipe(retry(3), catchError((error: HttpErrorResponse) => {return throwError(error)}));
   }
 

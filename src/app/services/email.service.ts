@@ -12,7 +12,7 @@ export class EmailService {
 
   postComentario(datos:object):Observable<object>{
     console.log(JSON.stringify(datos))
-    return this.http.post<object>('https://www.books4u.es/api/backProyectoFinal/public/api/factura',JSON.stringify(datos),{ headers: { 'Content-Type': 'application/json' }})
+    return this.http.post<object>('/api/backProyectoFinal/public/api/factura',JSON.stringify(datos),{ headers: { 'Content-Type': 'application/json' }})
       .pipe(catchError((error: HttpErrorResponse) => errorPeticion<object>(error)));
   }
 }
