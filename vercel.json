@@ -1,7 +1,7 @@
 {
     "rewrites": [
       {
-        "source": "/api/backProyectoFinal/public/api:path*",
+        "source": "/api/backProyectoFinal/public/api/:path*",
         "destination": "https://books4u-backend.onrender.com/api/:path*"
       },
       {
