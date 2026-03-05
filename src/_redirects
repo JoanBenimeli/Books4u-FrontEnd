@@ -1,0 +1,12 @@
+# --- PROXY DE LA API ---
+# Redirige cualquier llamada local a /api/ hacia Render
+/api/* https://books4u-backend.onrender.com/api/:splat  200
+
+# --- FALLBACKS DE ASSETS Y FAVICON ---
+/assets/* /es/assets/:splat  200
+/favicon.ico  /es/favicon.ico  200
+
+# --- REGLAS SPA PARA ANGULAR (i18n) ---
+# Evita errores 404 al refrescar la página en rutas internas
+/en/* /en/index.html  200
+/es/* /es/index.html  200
